@@ -110,4 +110,49 @@ Encoding:
 One-hot encoding works if the ranges are distinct and unrelated.
 Alternatively, ordinal encoding could work if there’s an implied ranking, such as younger age groups being more tech-savvy.
 
+What is RMSLE used in Regression with Insurance Data Kaggle dataset?
 
+RMSLE is a metric used to evaluate the performance of regression models, particularly when the target variable spans multiple orders of magnitude. It measures the differences between the predicted and actual values after applying a logarithmic transformation.
+
+Formula
+The formula for RMSLE is:
+
+ 
+​
+ 
+
+log: Natural logarithm.
+Step-by-Step Explanation
+Logarithmic Transformation:
+
+
+
+This makes RMSLE less sensitive to large absolute differences in values, focusing instead on relative differences.
+Offset by 1:
+
+
+  is computed for each data point, amplifying larger deviations.
+Mean and Root:
+
+The mean of these squared differences is calculated.
+The square root of this mean gives RMSLE, providing a scale similar to the original variable.
+Key Characteristics of RMSLE
+Relative Differences:
+
+RMSLE penalizes under-predictions more than over-predictions because of the logarithmic transformation.
+Sensitivity to Ratios:
+
+It is more focused on the ratio between predicted and actual values rather than their absolute differences.
+Robustness to Large Values:
+
+Works well when the target variable has large values, as it reduces the impact of extreme differences.
+Use Cases
+Forecasting Problems:
+
+Commonly used in demand or sales forecasting where actual values may vary significantly across observations.
+Skewed Data:
+
+Effective when the target variable spans multiple orders of magnitude or has a highly skewed distribution.
+Penalty for Under-Predictions:
+
+Preferred when underestimating values is more critical than overestimating them.
