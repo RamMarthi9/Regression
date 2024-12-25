@@ -6,3 +6,7 @@ Regression Basic Errors: MAE, MSE, RMSE, MSE
 RMSLE
 
 https://www.youtube.com/watch?v=z_DDJq1R6GI&t=1350s
+
+RMSE Vs RMSLE Article
+
+https://medium.com/analytics-vidhya/root-mean-square-log-error-rmse-vs-rmlse-935c6cc1802a
