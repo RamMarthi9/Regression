@@ -33,8 +33,8 @@ Y = 60 80 90 750
 X = 67 78 91 102
 Now, in this case, the RMSE and RMSLE comes out to be: 374.724 and 1.160 respectively
 
-RMSLE (Root Mean Squared Log Error) metric only considers the relative error between the Predicted and the actual value, the scale of the error is not significant. 
-On the other hand, RMSE value increases in magnitude if the scale of error increases.
+**RMSLE (Root Mean Squared Log Error) metric only considers the relative error between the Predicted and the actual value, the scale of the error is not significant. 
+On the other hand, RMSE value increases in magnitude if the scale of error increases.**
 
 **Relative Error**:
 Let’s understand this with the help of an example.
@@ -53,3 +53,29 @@ Y = 10000
 X = 9000
 Calculated RMSLE: 0.1053
 Calculated RMSE : 1000
+
+**Biased Penalty**:
+
+RMSLE incurs a larger penalty for the underestimation of the Actual variable than the Overestimation.
+
+In simple words, more penalty is incurred when the predicted Value is less than the Actual Value. On the other hand, Less penalty is incurred when the predicted value is more than the actual value.
+
+Let’s understand with an example.
+Case 1: Underestimation of Actual Value
+Y = 1000
+X = 600
+RMSE Calculated: 400
+RMSLE Calculated: 0.510
+
+Case2: Overestimation of Actual Value
+Y = 1000
+X = 1400
+RMSE calculated: 400
+RMSLE calculated: 0.33
+
+This is especially useful for business cases where the underestimation of the target variable is not acceptable but overestimation can be tolerated.
+
+For example:
+Consider a Regression problem where we have to predict the time taken by an agent to deliver the food to customers.
+Now, if the Regression model which we built overestimates the delivery time, the delivery agent then gets a relaxation on the time he takes to deliver food and this small overestimation is acceptable.
+But the problem arises when the predicted delivery time is less than the actual trip takes, in this case, the delivery agent is more likely to miss the deadline, as a result, the customer reviews can be affected.
