@@ -90,8 +90,12 @@ Q4. What is the difference between simple and multiple linear regression?
     More complex because it considers multiple predictors.
     Visualized as a hyperplane in an n-dimensional space (not easily visualizable for more than 3 predictors).
     
-Intermediate Questions
+Intermediate Questions:
+
 How do we evaluate the performance of a linear regression model? What metrics can we use?
+
+https://github.com/RamMarthi9/Regression/blob/main/Regression%20Errors.md
+
 
 What is multicollinearity? How does it affect a linear regression model?
 
