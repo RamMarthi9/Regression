@@ -73,7 +73,7 @@ X = 1400
 RMSE calculated: 400
 RMSLE calculated: 0.33
 
-This is especially useful for business cases where the underestimation of the target variable is not acceptable but overestimation can be tolerated.
+**This is especially useful for business cases where the underestimation of the target variable is not acceptable but overestimation can be tolerated.**
 
 For example:
 Consider a Regression problem where we have to predict the time taken by an agent to deliver the food to customers.
