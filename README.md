@@ -98,6 +98,38 @@ https://github.com/RamMarthi9/Regression/blob/main/Regression%20Errors.md
 
 
 What is multicollinearity? How does it affect a linear regression model?
+Multicollinearity refers to the situation where two or more independent variables in a multiple linear regression model are highly correlated with each other. This means that one independent variable can be predicted or explained by a combination of the other independent variables.
+
+How it affects a linear regression model:
+
+1. Unstable Coefficients: When multicollinearity is present, the regression coefficients (the values that multiply the independent variables) become highly sensitive to small changes in the data. This makes the model's coefficients unstable, meaning they might fluctuate significantly with small variations in the data.
+
+
+2. Inflated Standard Errors: High correlation among the predictors increases the standard errors of the estimated coefficients. This leads to less reliable estimates and makes it harder to determine whether a predictor is significantly contributing to the model.
+
+
+3. Difficulty in Interpretation: If two or more predictors are highly correlated, it becomes difficult to determine the individual effect of each predictor on the dependent variable because their effects are intertwined.
+
+
+4. Reduced Predictive Power: While the model might still fit the data well (low residuals), multicollinearity can reduce the model's ability to generalize to new data. This can lead to overfitting, where the model performs well on the training data but poorly on unseen data.
+
+
+
+Common Symptoms of Multicollinearity:
+
+High variance inflation factor (VIF) values for the independent variables.
+
+A high correlation matrix showing values close to 1 or -1 between pairs of predictors.
+
+
+Solutions to Multicollinearity:
+
+Remove highly correlated predictors.
+
+Combine predictors through techniques like Principal Component Analysis (PCA).
+
+Regularization techniques like Ridge or Lasso regression can help by adding a penalty to the model, thereby reducing the impact of multicollinearity.
+
 
 What is the significance of the p-value in a regression model?
 
