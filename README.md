@@ -133,6 +133,36 @@ Regularization techniques like Ridge or Lasso regression can help by adding a pe
 
 What is the significance of the p-value in a regression model?
 
+The p-value in a regression model is a statistical measure used to determine whether the relationship between the independent variable(s) and the dependent variable is statistically significant. It helps assess the null hypothesis, which typically states that there is no effect or relationship between the variables.
+
+Here's what the p-value signifies:
+
+1. Null Hypothesis Testing: The p-value tests the null hypothesis (usually that the coefficient of a variable is zero, indicating no relationship). A low p-value suggests that the null hypothesis can be rejected, and the independent variable is likely to have a significant effect on the dependent variable.
+
+
+2. Threshold for Significance: A common threshold for significance is 0.05:
+
+If the p-value ≤ 0.05, we reject the null hypothesis and conclude that the variable has a significant effect on the outcome.
+
+If the p-value > 0.05, we fail to reject the null hypothesis, implying that the variable may not have a significant effect on the outcome.
+
+
+
+3. Interpretation: A smaller p-value (e.g., 0.01) indicates stronger evidence against the null hypothesis, meaning the predictor is more likely to be a significant contributor. Conversely, a larger p-value (e.g., 0.10 or 0.20) suggests weaker evidence, and we might consider removing that predictor from the model.
+
+
+
+Limitations:
+
+P-value depends on sample size: In large datasets, even trivial effects can yield small p-values. Conversely, in small datasets, meaningful effects might not be statistically significant.
+
+Doesn't measure strength of the effect: A low p-value tells you that an effect is statistically significant, but it doesn't tell you the size or practical importance of that effect.
+
+
+In summary, the p-value in a regression model helps determine whether the relationship between a predictor and the outcome is statistically significant, guiding decisions about including variables in the model.
+
+
+
 How do you handle categorical variables in linear regression?
 
 What does the R-squared value represent? How does it differ from adjusted R-squared?
