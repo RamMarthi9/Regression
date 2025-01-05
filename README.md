@@ -1,4 +1,4 @@
-Regression:
+iiRegression:
 
 ![image](https://github.com/user-attachments/assets/a714f52f-5a35-40ed-b468-c2fd99de5913)
 
@@ -98,6 +98,7 @@ https://github.com/RamMarthi9/Regression/blob/main/Regression%20Errors.md
 
 
 What is multicollinearity? How does it affect a linear regression model?
+
 Multicollinearity refers to the situation where two or more independent variables in a multiple linear regression model are highly correlated with each other. This means that one independent variable can be predicted or explained by a combination of the other independent variables.
 
 How it affects a linear regression model:
@@ -161,9 +162,140 @@ Doesn't measure strength of the effect: A low p-value tells you that an effect i
 
 In summary, the p-value in a regression model helps determine whether the relationship between a predictor and the outcome is statistically significant, guiding decisions about including variables in the model.
 
-
-
 How do you handle categorical variables in linear regression?
+Categorical variables cannot be directly used in linear regression because the model operates on numerical values. To handle categorical variables effectively, you need to convert them into a numerical format. Here are common techniques to achieve this:
+
+1. Label Encoding
+
+Assigns a unique integer to each category.
+
+Example:
+
+"Red" → 0, "Green" → 1, "Blue" → 2.
+
+
+When to use:
+
+For ordinal data (categories with an inherent order, e.g., "Low," "Medium," "High").
+
+
+Limitation:
+
+May introduce an unintended ordinal relationship for nominal data.
+
+
+
+
+---
+
+2. One-Hot Encoding
+
+Creates binary (0 or 1) columns for each category.
+
+Example for "Color" with categories ["Red," "Green," "Blue"]:
+
+Red   Green   Blue
+1     0       0
+0     1       0
+0     0       1
+
+When to use:
+
+For nominal data (categories without a meaningful order).
+
+
+Limitation:
+
+Increases the dimensionality if there are many unique categories.
+
+
+
+
+---
+
+3. Dummy Encoding
+
+A variant of one-hot encoding that drops one column to avoid the dummy variable trap (perfect multicollinearity).
+
+Example for "Color" with ["Red," "Green," "Blue"]:
+
+Green   Blue
+0       0   → Red
+1       0   → Green
+0       1   → Blue
+
+Linear regression inherently handles this without explicitly dropping columns in many libraries.
+
+
+
+---
+
+4. Frequency or Count Encoding
+
+Replace categories with their frequency or count in the dataset.
+
+Example:
+
+"Red" → 10 (occurs 10 times),
+"Green" → 20,
+"Blue" → 5.
+
+When to use:
+
+When the frequency of categories carries meaningful information.
+
+
+
+
+---
+
+5. Mean Encoding (Target Encoding)
+
+Replace each category with the mean of the target variable for that category.
+
+Example:
+
+If the average sales for "Red," "Green," and "Blue" are 50, 60, and 70, respectively:
+
+"Red" → 50, "Green" → 60, "Blue" → 70.
+
+
+When to use:
+
+When there’s a strong relationship between the categorical variable and the target variable.
+
+
+Caution: Risk of overfitting; use with techniques like k-fold cross-validation.
+
+
+
+---
+
+6. Binary Encoding
+
+Combines label encoding and one-hot encoding.
+
+Converts categories into binary and then splits them into columns.
+
+Example:
+
+Category IDs: ["A" → 1, "B" → 2, "C" → 3].
+
+Binary representation: [01, 10, 11].
+
+
+When to use:
+
+To reduce dimensionality compared to one-hot encoding.
+
+
+
+
+---
+
+Best Practices
+
+For small numbers of categories: Use one-hot or dummy encoding.
 
 What does the R-squared value represent? How does it differ from adjusted R-squared?
 
