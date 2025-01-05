@@ -1,4 +1,4 @@
-iiRegression:
+iniiRegression:
 
 ![image](https://github.com/user-attachments/assets/a714f52f-5a35-40ed-b468-c2fd99de5913)
 
@@ -296,8 +296,6 @@ To reduce dimensionality compared to one-hot encoding.
 Best Practices
 
 For small numbers of categories: Use one-hot or dummy encoding.
-
-What does the R-squared value represent? How does it differ from adjusted R-squared?
 
 What is the role of feature scaling in linear regression? Is it necessary?
 
