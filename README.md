@@ -343,9 +343,13 @@ In summary, while feature scaling is not strictly required for solving linear re
 
 
 Advanced Questions
+
 Explain the concept of regularization in linear regression. How do Lasso and Ridge regression differ?
+Regularization in linear regression is a technique used to prevent overfitting by introducing a penalty term to the cost function. 
+This penalty discourages overly complex models, effectively shrinking some model coefficients toward zero. It is particularly useful when dealing with datasets with high dimensionality or multicollinearity.
 
 What is the effect of outliers on a linear regression model? How can we address them?
+
 
 What is the difference between underfitting and overfitting in linear regression? How can you prevent them?
 
