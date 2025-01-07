@@ -349,7 +349,63 @@ Regularization in linear regression is a technique used to prevent overfitting b
 This penalty discourages overly complex models, effectively shrinking some model coefficients toward zero. It is particularly useful when dealing with datasets with high dimensionality or multicollinearity.
 
 What is the effect of outliers on a linear regression model? How can we address them?
+Outliers can significantly impact a linear regression model because regression is sensitive to extreme values. These points can distort parameter estimates, degrade model performance, and lead to misleading interpretations. Here's how outliers affect linear regression and how they can be addressed:
 
+Effect of Outliers
+Influence on the Regression Line:
+
+Outliers can skew the regression line, as the least squares method minimizes the sum of squared residuals. A single outlier can disproportionately influence the slope and intercept, leading to a model that poorly represents the majority of the data.
+Biased Coefficients:
+
+Outliers can cause the estimated coefficients to deviate from their true values, reducing the accuracy of predictions.
+Increased Variance:
+
+Outliers inflate the residual sum of squares, increasing the model’s variance and reducing its robustness.
+Distortion of R² and p-values:
+
+The presence of outliers can misrepresent the goodness-of-fit metrics (like 
+𝑅
+2
+R 
+2
+ ) and the significance of predictors, leading to incorrect conclusions about the model.
+How to Address Outliers
+Detection:
+
+Visual Inspection: Use scatter plots or residual plots to identify outliers visually.
+Statistical Tests:
+Z-scores: Observations with Z-scores greater than 3 (or a chosen threshold) may be considered outliers.
+Cook's Distance: Measures the influence of each data point on the regression line.
+Leverage Values: Points with high leverage significantly influence the regression line.
+Box Plots: Identify outliers in individual variables.
+Handling Outliers:
+
+Remove Outliers:
+If the outliers are data entry errors or irrelevant observations, they can be removed.
+Caution: Ensure that removing outliers is justified and does not exclude valid but extreme observations.
+Transform the Data:
+Apply log, square root, or other transformations to reduce the impact of extreme values.
+Use Robust Regression:
+Techniques like Huber Regression or RANSAC Regression reduce the influence of outliers by giving less weight to extreme values.
+Regularization:
+Ridge regression can help mitigate the impact of outliers by shrinking coefficients, though it doesn’t directly handle outliers.
+Winsorization:
+Replace outliers with the nearest valid value within a specified percentile range.
+Impute:
+Replace outliers with mean, median, or other statistical measures.
+Evaluate Model Robustness:
+
+Compare model performance with and without handling outliers using metrics like RMSE, MAE, or adjusted 
+𝑅
+2
+R 
+2
+ .
+Non-Linear Models:
+
+If outliers are due to non-linear relationships, consider using non-linear regression models or decision trees, which are less sensitive to outliers.
+Key Takeaway
+Outliers can distort the outcomes of a linear regression model, leading to biased predictions and poor generalization. Detecting and addressing outliers using robust methods ensures a more accurate and reliable model. However, always consider the context of the data to decide whether to retain or remove outliers.
 
 What is the difference between underfitting and overfitting in linear regression? How can you prevent them?
 
