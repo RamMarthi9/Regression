@@ -379,13 +379,14 @@ Underfitting and overfitting are two common problems in machine learning, includ
 
 **Q15. If a linear regression model has high multicollinearity, what methods can you use to address it?**
 
-Scenario-Based Questions
-Imagine you’ve built a linear regression model, and the residuals show a clear pattern. What does this indicate? How would you address it?
+High multicollinearity in a linear regression model occurs when two or more independent variables are highly correlated, leading to unreliable coefficient estimates. This can make it difficult to determine the individual effect of each variable on the dependent variable. Here are some methods to address multicollinearity:
 
-Your model’s R-squared value is very high, but it performs poorly on the test set. What might be the cause?
+<img width="419" alt="image" src="https://github.com/user-attachments/assets/1cb50018-f492-4848-a2a6-501bfcbfad00" />
 
-You’re using a linear regression model to predict housing prices, but the predictions are consistently lower than the actual prices. What could be the issue?
+<img width="446" alt="image" src="https://github.com/user-attachments/assets/be644b29-a827-4816-b656-93798ead01cc" />
 
-You have a dataset with 100 features, but only a subset of them are relevant. How would you select the best features for your linear regression model?
+<img width="409" alt="image" src="https://github.com/user-attachments/assets/98a69318-a5fa-4d61-8a32-1e6ad29a7966" />
 
-You’ve applied a linear regression model, but the coefficients for some features are unexpectedly negative. How would you investigate this?
+<img width="444" alt="image" src="https://github.com/user-attachments/assets/4f00b4ea-bc56-4d57-a908-490c0a57a2e9" />
+
+<img width="400" alt="image" src="https://github.com/user-attachments/assets/7cd7aacf-5c2d-4587-a377-2a78f737f9db" />
