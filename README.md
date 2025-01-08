@@ -344,6 +344,25 @@ Outliers can distort the outcomes of a linear regression model, leading to biase
 
 **Q12. What is the difference between underfitting and overfitting in linear regression? How can you prevent them?**
 
+Underfitting and overfitting are two common problems in machine learning, including in linear regression, where the model fails to generalize well to unseen data. Here's how they differ:
+
+1. Underfitting
+- Definition: Underfitting occurs when the model is too simple to capture the underlying patterns in the data. This typically happens when the model has insufficient complexity (e.g., too few features or low-degree polynomial in regression).
+    - Symptoms:
+        - High training error.
+        - High testing error (as the model performs poorly on both the training and validation/test sets).
+- Cause: The model lacks the capacity to learn from the data adequately.
+- Example: A straight line fit for a clearly nonlinear relationship between variables.
+
+2. Overfitting
+- Definition: Overfitting occurs when the model is too complex and captures not only the underlying patterns but also noise and random variations in the training data.
+    - Symptoms:
+    - Low training error.
+    - High testing error (as the model performs well on the training data but poorly on the validation/test set).
+- Cause: The model has too much capacity or flexibility, leading it to memorize the training data instead of generalizing.
+- Example: A high-degree polynomial fit that oscillates excessively to pass through all data points.
+
+
 **Q13. How do you interpret the coefficients in a linear regression model?**
 
 **Q14. If a linear regression model has high multicollinearity, what methods can you use to address it?**
