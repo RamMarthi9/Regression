@@ -277,11 +277,13 @@ In regularized linear regression (e.g., Ridge or Lasso regression), feature scal
 
 In summary, while feature scaling is not strictly required for solving linear regression with a closed-form solution, it is essential for models using gradient descent or regularization for numerical stability, better convergence, and interpretability.
 
-**Explain the concept of regularization in linear regression. How do Lasso and Ridge regression differ?
+**Explain the concept of regularization in linear regression. How do Lasso and Ridge regression differ?**
+
 Regularization in linear regression is a technique used to prevent overfitting by introducing a penalty term to the cost function. 
 This penalty discourages overly complex models, effectively shrinking some model coefficients toward zero. It is particularly useful when dealing with datasets with high dimensionality or multicollinearity.
 
 **Q11. What is the effect of outliers on a linear regression model? How can we address them?**
+
 Outliers can significantly impact a linear regression model because regression is sensitive to extreme values. These points can distort parameter estimates, degrade model performance, and lead to misleading interpretations. Here's how outliers affect linear regression and how they can be addressed:
 
 Effect of Outliers
