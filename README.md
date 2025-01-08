@@ -369,6 +369,10 @@ Underfitting and overfitting are two common problems in machine learning, includ
 
 <img width="553" alt="image" src="https://github.com/user-attachments/assets/b5bc1134-8382-4815-a490-7da46476beee" />
 
+<img width="503" alt="image" src="https://github.com/user-attachments/assets/c8338909-51e2-4f44-9a6c-be5563655007" />
+
+<img width="525" alt="image" src="https://github.com/user-attachments/assets/00ba85e7-0e84-4525-939a-48c3d9307dcb" />
+
 <img width="545" alt="image" src="https://github.com/user-attachments/assets/f738e552-1d4e-48a0-bd7f-6d06a06e2dae" />
 
 <img width="521" alt="image" src="https://github.com/user-attachments/assets/a16bb277-d197-4e5b-89d8-36206f46eefb" />
