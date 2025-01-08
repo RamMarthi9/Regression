@@ -150,6 +150,7 @@ Doesn't measure strength of the effect: A low p-value tells you that an effect i
 In summary, the p-value in a regression model helps determine whether the relationship between a predictor and the outcome is statistically significant, guiding decisions about including variables in the model.
 
 **Q8. How do you handle categorical variables in linear regression?**
+
 Categorical variables cannot be directly used in linear regression because the model operates on numerical values. To handle categorical variables effectively, you need to convert them into a numerical format. Here are common techniques to achieve this:
 
 1. Label Encoding
