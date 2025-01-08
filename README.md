@@ -278,12 +278,12 @@ In regularized linear regression (e.g., Ridge or Lasso regression), feature scal
 
 In summary, while feature scaling is not strictly required for solving linear regression with a closed-form solution, it is essential for models using gradient descent or regularization for numerical stability, better convergence, and interpretability.
 
-**Explain the concept of regularization in linear regression. How do Lasso and Ridge regression differ?**
+**Q11.Explain the concept of regularization in linear regression. How do Lasso and Ridge regression differ?**
 
 Regularization in linear regression is a technique used to prevent overfitting by introducing a penalty term to the cost function. 
 This penalty discourages overly complex models, effectively shrinking some model coefficients toward zero. It is particularly useful when dealing with datasets with high dimensionality or multicollinearity.
 
-**Q11. What is the effect of outliers on a linear regression model? How can we address them?**
+**Q12. What is the effect of outliers on a linear regression model? How can we address them?**
 
 Outliers can significantly impact a linear regression model because regression is sensitive to extreme values. These points can distort parameter estimates, degrade model performance, and lead to misleading interpretations. Here's how outliers affect linear regression and how they can be addressed:
 
@@ -343,7 +343,7 @@ If outliers are due to non-linear relationships, consider using non-linear regre
 Key Takeaway
 Outliers can distort the outcomes of a linear regression model, leading to biased predictions and poor generalization. Detecting and addressing outliers using robust methods ensures a more accurate and reliable model. However, always consider the context of the data to decide whether to retain or remove outliers.
 
-**Q12. What is the difference between underfitting and overfitting in linear regression? How can you prevent them?**
+**Q13. What is the difference between underfitting and overfitting in linear regression? How can you prevent them?**
 
 Underfitting and overfitting are two common problems in machine learning, including in linear regression, where the model fails to generalize well to unseen data. Here's how they differ:
 
@@ -363,10 +363,17 @@ Underfitting and overfitting are two common problems in machine learning, includ
 - Cause: The model has too much capacity or flexibility, leading it to memorize the training data instead of generalizing.
 - Example: A high-degree polynomial fit that oscillates excessively to pass through all data points.
 
+**Q14. How do you interpret the coefficients in a linear regression model?**
 
-**Q13. How do you interpret the coefficients in a linear regression model?**
+<img width="545" alt="image" src="https://github.com/user-attachments/assets/a1def5da-ea7e-4a97-9ce9-87861451eb79" />
 
-**Q14. If a linear regression model has high multicollinearity, what methods can you use to address it?**
+<img width="553" alt="image" src="https://github.com/user-attachments/assets/b5bc1134-8382-4815-a490-7da46476beee" />
+
+<img width="545" alt="image" src="https://github.com/user-attachments/assets/f738e552-1d4e-48a0-bd7f-6d06a06e2dae" />
+
+<img width="521" alt="image" src="https://github.com/user-attachments/assets/a16bb277-d197-4e5b-89d8-36206f46eefb" />
+
+**Q15. If a linear regression model has high multicollinearity, what methods can you use to address it?**
 
 Scenario-Based Questions
 Imagine you’ve built a linear regression model, and the residuals show a clear pattern. What does this indicate? How would you address it?
